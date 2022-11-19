@@ -1,0 +1,13 @@
+.header-fizz{
+    color: #4AD1E0; 
+ }
+.header-buzz{
+   color: #0084ff; 
+}
+.tech-list{
+    list-style: none;
+}
+
+.fa-circle-check{
+    color: #0084ff;
+}
