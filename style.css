@@ -1,13 +1,36 @@
-.header-fizz{
-    color: #4AD1E0; 
- }
-.header-buzz{
-   color: #0084ff; 
+main{
+    font-family:Arial, Helvetica, sans-serif;
 }
-.tech-list{
+
+ul {
     list-style: none;
 }
 
-.fa-circle-check{
+footer {
+    background-color: #e3f2fd;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.header-fizz {
+    color: #4AD1E0;
+}
+
+.header-buzz {
     color: #0084ff;
+}
+
+.fa-circle-check {
+    color: #0084ff;
+}
+
+.footer-col2{
+    font-size:30px;
+    font-weight:bold;
+  
+}
+
+.footer-col3{
+    font-size:30px;
+  
 }
