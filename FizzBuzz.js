@@ -2,11 +2,26 @@ let containerEl = document.getElementById("results");
 let btn = document.getElementById("click-btn");
 let tableEl=document.createElement('table');
 
-
-
-function displayValue() {
+function checkInteger(){
     let fVEl = document.getElementById("fizzvalue").value;
-    let bVEl = document.getElementById("buzzvalue").value;  
+    let bVEl = document.getElementById("buzzvalue").value;
+   
+    fVEl = parseInt(fVEl);
+    bVEl = parseInt(bVEl);
+    
+    if (Number.isInteger(fVEl)&&Number.isInteger(bVEl))
+    {   
+        printTable(fVEl,bVEl);
+    }
+    else
+    {
+        $('#staticBackdrop').modal('show');
+    }
+}
+
+
+function displayValue(fVEl,bVEl) {
+    
     let el= document.getElementsByTagName('td');
       
     for (i = 1; i <= 100; i++) {
@@ -35,7 +50,7 @@ function displayValue() {
     }
 }
 
-function printTable(){
+function printTable(fVEl,bVEl){
     containerEl.appendChild(tableEl);
     tableEl.innerHTML="";
 for (i=0; i<20; i++)
@@ -48,7 +63,7 @@ for (i=0; i<20; i++)
         rowEl.appendChild(tdEl);
     }
  }
- displayValue();
+ displayValue(fVEl,bVEl);
 }
 
-btn.addEventListener('click', printTable);
+btn.addEventListener('click', checkInteger);

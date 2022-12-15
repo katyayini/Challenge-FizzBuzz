@@ -3,6 +3,10 @@ main{
     margin-bottom: 100px;
 }
 
+h2{
+    color: steelblue;
+}
+
 ul {
     list-style: none;
 }
@@ -25,6 +29,13 @@ width: 100px;
 text-align: center;
 }
 
+pre{
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    margin-top: 3px;
+}
 
 footer {
     background-color: #e3f2fd;
@@ -41,8 +52,9 @@ footer {
 }
 
 .fa-circle-check {
-    color: #0084ff;
+    color: #2C78E7;
 }
+
 
 .footer-col2{
     font-size:30px;
