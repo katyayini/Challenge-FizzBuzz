@@ -9,16 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>FIZZ BUZZ</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.ico" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
     <script src="https://kit.fontawesome.com/51700f7f01.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/favicon.ico" alt="Fizz Buzz Icon"
+            <a class="navbar-brand" href="index.html"><img src="images/favicon.ico" alt="Fizz Buzz Icon"
                     class="d-inline-block align-text-top" width="30" height="24">FIZZ BUZZ</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,10 +37,7 @@
                         <a class="nav-link" href="code.html">The Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git Repo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
 
                 </ul>
@@ -52,7 +49,7 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <h2>Code for Fizz Buzz</h2>
+                <h2 class="mt-2">Code for Fizz Buzz</h2>
                 <hr>
                 <div class="col">
                     <pre><code> 
@@ -129,7 +126,31 @@ btn.addEventListener('click', checkInteger);
 </code>  </pre>
                 </div>
                 <div class="col">
-                   
+                    <h4 style="color:#234C89">Description</h4>
+                    <p>This program consists of three <strong>functions</strong>:
+                    <ol>
+                        <li><strong>checkInteger</strong></li>
+                        <li><strong>printTable</strong></li>
+                        <li><strong>displayValue</strong></li>
+                    </ol>
+                    The program accespts two integer values from user.
+                    The <em>checkInteger</em>> function checks if both values are integer.
+                    If not, then it displays a <strong>Bootstrap modal</strong> asking user to enter only integer
+                    values.
+                    If both values entered are integer values, it calls the <em>printTable function</em>.
+                    This function creates a table with rows and columns and calls the <em>displayValue</em> function.
+                    This function prints 'Fizz' if number is divisible by first value, 'Buzz' if number is divisible by
+                    second value and 'FizzBuzz' if number is divisible by both values.</p>
+                    <strong>Psuedocode for FizzBuzz:</strong>
+                    <pre>
+for number from 1 to 100:
+ if (number is divisible by 3 and 5) then:
+    print("FizzBuzz")
+ if (number is divisible by 3) then:
+    print("Fizz")
+ if (number is divisible by 5) then:
+    print("Buzz")</pre>
+
                 </div>
 
 
@@ -147,8 +168,8 @@ btn.addEventListener('click', checkInteger);
                     KATYAYINI BHATNAGAR
                 </div>
                 <div class="col d-flex m-auto justify-content-end footer-col3">
-                    <i class="fa-brands fa-github me-4"></i>
-                    <i class="fa-brands fa-linkedin me-2"></i>
+                    <a href="https://github.com/katyayini" target="_blank" class="a-link"><i class="fa-brands fa-github me-4"></i></a>
+                    <a href="https://www.linkedin.com/in/katyayinibhatnagar/" target="_blank" class="a-link"><i class="fa-brands fa-linkedin me-2"></i></a>
                 </div>
             </div>
         </div>
